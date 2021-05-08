@@ -21,14 +21,14 @@ _() {
   cat README.md
 
     
-  #git add .
+  git add .
   
-    #git commit -m "${USERNAME}"
-  #git remote add origin "https://github.com/${USERNAME}/${USERNAME}.git"
-  #git branch -M master
-  #git push -u origin master -f
-  #cd ..
-  #rm -rf "${USERNAME}"
+    git commit -m "${USERNAME}"
+  git remote add origin "https://github.com/${USERNAME}/${USERNAME}.git"
+  git branch -M master
+  git push -u origin master -f
+  cd ..
+  rm -rf "${USERNAME}"
 
   echo
   echo "Cool, check your profile now: https://github.com/${USERNAME}"
