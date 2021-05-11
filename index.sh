@@ -4,7 +4,7 @@ _() {
 
   echo "Github Username: "
   read -r USERNAME
-  # USERNAME="ttt"
+
 
   [ -z "$USERNAME" ] && exit 1
   [ ! -d $USERNAME ] && mkdir $USERNAME
@@ -24,8 +24,8 @@ _() {
   git add .
   
     git commit -m "${USERNAME}"
-  # git remote add origin "https://github.com/${USERNAME}/${USERNAME}.git"
-  git remote add origin "https://github.com/Velg03961485/${USERNAME}.git"
+  git remote add origin "https://github.com/${USERNAME}/${USERNAME}.git"
+  # git remote add origin "https://github.com/Velg03961485/${USERNAME}.git"
   git branch -M master
   git push -u origin master -f
   cd ..
